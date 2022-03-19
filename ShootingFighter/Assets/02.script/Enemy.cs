@@ -21,7 +21,7 @@ private void OnTriggerEnter(Collider other)
         //collision.gameObject.GetComponent<Player>().Hurt();//coll.gameob하면 플레이어에 접근
 
         //얘는 같은 콜라이더나 오브젝트가 아닌 강체와 충돌한다
-        Destroy(gameObject);
+       
         //
     }
    
