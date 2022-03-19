@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour
         if (go == null) return;
         if(go.layer==LayerMask.NameToLayer("Enemy"))
         {
+            go.GetComponent<Enemy>().DoDestroyEffect();
             Destroy(go);
             Destroy(gameObject);
         }

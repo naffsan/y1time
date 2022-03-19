@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
-    // 총알과 충돌했을 시-콜라이더
-    //오브젝트와 충돌시키는 스크립트
+// 총알과 충돌했을 시-콜라이더
+//오브젝트와 충돌시키는 스크립트
 {
-    private void OnTriggerEnter(Collider other)
+    public GameObject destroyEffect;
+
+    public void DoDestroyEffect()
+    {
+        GameObject go = Instantiate(destroyEffect,transform.position,Quaternion.identity);
+        Destroy(go, 3);
+    }
+
+
+private void OnTriggerEnter(Collider other)
     {
 
         //collision.gameObject.GetComponent<Player>().Hurt();//coll.gameob하면 플레이어에 접근
