@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     //총알이 나가야 하니 속도와 방향이 있어야 함
     public Vector3 dir=Vector3.forward;//여기서 dir은 나가는 방향...3차원이고 각 방향만큼 얼만큼 이동할지 입력하면 그만큼의 속력으로 나가게 됨
     public float speed=5f;
+    public int damage=5;
      Transform tr;
 
     private void Awake() => tr = GetComponent<Transform>();//
@@ -21,8 +22,7 @@ public class Bullet : MonoBehaviour
         if (go == null) return;
         if(go.layer==LayerMask.NameToLayer("enemy"))
         {
-            go.GetComponent<Enemy>().DoDestroyEffect();
-            Destroy(go);
+            go.GetComponent<Enemy>().hp -= damage;
             Destroy(gameObject);
         }
     }
