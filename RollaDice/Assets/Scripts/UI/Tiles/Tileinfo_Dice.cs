@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using UnityEngine;
 
-namespace Assets.Scripts
+public class Tileinfo_Dice : TileInfo
 {
-    internal class Tileinfo_Dice: TileInfo
+
+    
+    public override void TlieEvent()
     {
+        Debug.Log($"Index of the tile: {index}, Increase star value +1");
+        DiceGameManager.instance.diceNum++;
     }
 }

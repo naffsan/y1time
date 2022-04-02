@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using UnityEngine;
 
-namespace Assets.Scripts
+public class Tileinfo_Star : TileInfo
 {
-    internal class Tileinfo_Star: TileInfo
+    public int starValue = 3;
+    public  void TileEvent()
     {
+
     }
+
 }

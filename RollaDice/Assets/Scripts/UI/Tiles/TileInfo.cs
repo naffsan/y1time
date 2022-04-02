@@ -6,7 +6,7 @@ public class TileInfo : MonoBehaviour
 {
     // Start is called before the first frame update
     public int index;
-    public void TlieEvent()
+    public virtual void TlieEvent()
     {
         Debug.Log($"Index of the tile: {index}");
 

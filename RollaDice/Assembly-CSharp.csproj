@@ -53,14 +53,15 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\UI\WobblyText.cs" />
+    <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_Inverse.cs" />
+    <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_Star.cs" />
     <Compile Include="Assets\Scripts\UI\Tiles\TileInfo.cs" />
     <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_Dice.cs" />
-    <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_Inverse.cs" />
-    <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_GoldenDice.cs" />
-    <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_Star.cs" />
     <Compile Include="Assets\Scripts\DiceGameManager.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\UI\Tiles\Tileinfo_GoldenDice.cs" />
+    <Compile Include="Assets\Scripts\UI\WobblyText.cs" />
+    <Compile Include="Assets\Scripts\DicdAnimationUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
